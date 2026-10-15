@@ -1,4 +1,3 @@
-// @ts-expect-error CSS side-effect imports aren't declared in this project's TypeScript setup.
 import "@/app/ui/global.css";
 import { inter, lusitana } from "./ui/fonts";
 
