@@ -1,5 +1,6 @@
 // @ts-expect-error CSS side-effect imports aren't declared in this project's TypeScript setup.
 import "@/app/ui/global.css";
+import { inter, lusitana } from "./ui/fonts";
 
 export default function RootLayout({
   children,
@@ -8,7 +9,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body className={`${lusitana.className} antialiased`}>{children}</body>
     </html>
   );
 }
